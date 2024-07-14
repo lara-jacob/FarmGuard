@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmGuard</title>
+    <style>
+     
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content:center;
+            margin-bottom: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .order-online {
+            background: #fff;
+            color: #4CAF50;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .order-online:hover {
+            background: #ddd;
+        }
+
+        section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+        }
+
+        section p {
+            margin-bottom: 20px;
+        }
+
+        .reserve {
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .reserve:hover {
+            background: #45a049;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .specials {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .specials h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .specials-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .special-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            margin: 10px;
+        }
+
+        .special-item img {
+            width: 100%;
+            height:fit-content;
+        }
+
+        .special-item h2 {
+            font-size: 1.2em;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-size: 1em;
+            color: #e67e22;
+        }
+
+        .special-item p {
+            padding: 0 10px 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .order-btn {
+            display: block;
+            background: #27ae60;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 4px;
+        }
+
+        .order-btn:hover {
+            background: #219150;
+        }
+
+        .online-menu {
+            display: inline-block;
+            background: #f39c12;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .online-menu:hover {
+            background: #e67e22;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            nav ul {
+                justify-content: flex-start;
+            }
+
+            nav ul li {
+                margin: 0 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>FarmGuard</h1>
+            <p>~Embracing technology and innovation can help overcome the challenges faced by agriculture today and pave the way for a more resilient and productive future.~</p>
+        </div>
+    </header>
+    
+    <section class="specials">
+        <h1>EXPLORE NOW!</h1>
+        <div class="specials-container">
+            <div class="special-item">
+                <img src="cropp.avif" alt="crop-recommendation">
+                <h2>Crop Recommendation</h2>
+                <p>Get personalized crop recommendations based on your soil type and weather conditions</p>
+                <a href="crop.html" class="order-btn">Click for more</a>
+            </div>
+            <div class="special-item">
+                <img src="fertilizer.avif" alt="fertilizer-recommendation">
+                <h2>Fertilizer recommendation</h2>
+                <p>Discover the best fertilizers to use for your crops to ensure optimal growth and yield</p>
+                <a href="ferti.html" class="order-btn">Click for more</a>
+            </div>
+            <div class="special-item">
+                <img src="diseas.jpg" alt="disease-detection">
+                <h2>Disease Detection</h2>
+                <p>Identify potential diseases in your crops early to prevent spread and minimize damage.</p>
+                <a href="disease.html" class="order-btn">Click for more</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Agriculture Recommendation Tool. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

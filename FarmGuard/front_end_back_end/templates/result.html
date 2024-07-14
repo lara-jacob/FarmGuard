@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .model-info {
+            margin-top: 20px;
+            color: #333;
+            background-color: #ffffff;
+            border: 2px solid #4CAF50;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .result {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .highlight {
+            color: #4CAF50;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .tagline {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crop Prediction</h1>
+    </header>
+    <main>
+        <p><strong>Nitrogen:</strong> {{ result.Nitrogen }}</p>
+        <p><strong>Phosphorous:</strong> {{ result.Phosphorous }}</p>
+        <p><strong>Potassium:</strong> {{ result.Pottassium }}</p>
+        <p><strong>temperature:</strong> {{ result.temperature }}</p>
+        <p><strong>Humidity:</strong> {{ result.humidity }}</p>
+        <p><strong>pH:</strong> {{ result.ph }}</p>
+        <p><strong>Rainfall:</strong> {{ result.rainfall }}</p>
+        <p><strong>Recommendation:</strong> {{ result.result }}</p>
+        <div class="model-info">
+            <p class="highlight">Powered by</p>
+            <p class="highlight">KNN Model</p>
+            <p class="tagline">Achieving an accuracy of 96%</p>
+            <p>Experience the power of precision farming with our state-of-the-art predictive model. Maximize your yield, minimize your risk!</p>
+        </div>
+    </main>
+    <footer>
+        <p>FarmGuard © 2024</p>
+    </footer>
+</body>
+</html>

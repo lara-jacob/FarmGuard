@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fertilizer Recommendation Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .model-info {
+            margin-top: 20px;
+            color: #333;
+            background-color: #ffffff;
+            border: 2px solid #4CAF50;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .result {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .highlight {
+            color: #4CAF50;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .tagline {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fertilizer Recommendation Result</h1>
+    </header>
+    <main>
+        <div class="result-info">
+            <p><strong>Temperature:</strong> {{ result.temperature }}</p>
+            <p><strong>Humidity:</strong> {{ result.humidity }}</p>
+            <p><strong>Moisture:</strong> {{ result.moisture }}</p>
+            <p><strong>Soil Type:</strong> {{ result.soil_type }}</p>
+            <p><strong>Crop Type:</strong> {{ result.crop_type }}</p>
+            <p><strong>Nitrogen Level:</strong> {{ result.Nitrogen }}</p>
+            <p><strong>Phosphorous Level:</strong> {{ result.Phosphorous }}</p>
+            <p><strong>Potassium Level:</strong> {{ result.Potassium }}</p>
+            <p><strong>Recommendation:</strong> {{ result.result }}</p>
+        </div>
+        <div class="model-info">
+            <p class="highlight">Powered by</p>
+            <p class="highlight">Random Forest Classifier Model</p>
+            <p class="tagline">Achieving an accuracy of 99%</p>
+            <p>Experience the power of precision farming with our state-of-the-art predictive model. Maximize your yield, minimize your risk!</p>
+        </div>
+    </main>
+    <footer>
+        <p>FarmGuard © 2024</p>
+    </footer>
+</body>
+</html>
